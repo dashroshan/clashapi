@@ -21,7 +21,7 @@ tokens = clashapi.coc("email", "password")
 # Clash Royale
 tokens = clashapi.cr("email", "password")
 
-# tokens is a list of api key token strings that you can now use to access the COC/CR APIs
+# tokens is a list of api key token strings that you can now use to access COC/CR APIs
 ```
 
 ### Quick Example
