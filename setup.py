@@ -7,6 +7,6 @@ setup(
   author = 'Roshan Dash',
   author_email = 'roshan1337d@gmail.com',
   url = 'https://github.com/roshan1337d/clashapi',
-  keywords = ['coc', 'clash of clans'],
+  keywords = ['coc', 'cr', 'clash of clans', 'clash royale', 'clash'],
   install_requires=['requests']
 )
