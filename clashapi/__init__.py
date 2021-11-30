@@ -1,6 +1,6 @@
 import requests
 
-def updatekeys(email,password):
+def coc(email,password):
 	#Getting the current ip address of the system
 	currentIP=requests.get("https://api.ipify.org").content.decode('utf8')
 
