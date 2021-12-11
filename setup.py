@@ -21,5 +21,5 @@ setup(
 	license="MIT",
     keywords=["coc", "cr", "clash of clans",
               "clash royale", "clash", "royale", "clan", "api"],
-    install_requires=["requests", "json", "base64"]
+    install_requires=["requests"]
 )
