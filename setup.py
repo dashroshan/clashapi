@@ -11,7 +11,7 @@ setup(
     name="clashapi",
     packages=["clashapi"],
 	include_package_data=True,
-    version="1.0",
+    version="1.1",
     description="Update IP address of Clash of Clans and/or Clash Royale API keys with token fetching",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -21,5 +21,5 @@ setup(
 	license="MIT",
     keywords=["coc", "cr", "clash of clans",
               "clash royale", "clash", "royale", "clan", "api"],
-    install_requires=["requests"]
+    install_requires=["requests", "json", "base64"]
 )
