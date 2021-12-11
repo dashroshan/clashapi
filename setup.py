@@ -11,7 +11,7 @@ setup(
     name="clashapi",
     packages=["clashapi"],
 	include_package_data=True,
-    version="1.1",
+    version="1.2",
     description="Update IP address of Clash of Clans and/or Clash Royale API keys with token fetching",
     long_description=README,
     long_description_content_type="text/markdown",
