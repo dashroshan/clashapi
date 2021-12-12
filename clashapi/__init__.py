@@ -9,11 +9,8 @@ def updatekeys(email, password, baseUrl, scopes):
 	#Loggin in
 	loginData=session.post(url=f"{baseUrl}/api/login", json={"email": email,"password": password})
 
-	#Getting the current ip address of the system from the buffer returned by the login post. api.ipify.org is used as a fallback.
-	try:
-		currentIP=json_loads(base64_b64decode(loginData.json()["temporaryAPIToken"].split(".")[1]+"=").decode("utf-8"))["limits"][1]["cidrs"][0].split("/")[0]
-	except:
-		currentIP=requests.get("https://api.ipify.org").content.decode('utf8')
+	#Getting the current ip address of the system from the buffer returned by the login post
+	currentIP=json_loads(base64_b64decode(loginData.json()["temporaryAPIToken"].split(".")[1]+"====").decode("utf-8"))["limits"][1]["cidrs"][0].split("/")[0]
 
 	#Getting the list of current keys
 	#If the ip address of a key is not the current one, its id, name, and description is added to the KeysToUpdate list
