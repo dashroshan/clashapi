@@ -33,7 +33,7 @@ def updatekeys(email, password, baseUrl, scopes):
 		tokens.append(key["key"])
 
 	#Logging out
-	session.post(url=f"{baseUrl}/api/apikey/revoke",json={})
+	session.post(url=f"{baseUrl}/api/logout",json={})
 
 	#Return a list of tokens that can now be used
 	return tokens
